@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "Harry",
+        "email": "harry@blueweb.cl",
+        "estado": true
+    },
+    {
+        "id": 2,
+        "nombre": "Debra",
+        "email": "Debra@blueweb.cl",
+        "estado": false
+    },
+    {
+        "id": 3,
+        "nombre": "Dexter",
+        "email": "Dexter@blueweb.cl",
+        "estado": true
+    },
+    {
+        "id": 4,
+        "nombre": "Rita",
+        "email": "Rita@blueweb.cl",
+        "estado": true
+    }
+]
