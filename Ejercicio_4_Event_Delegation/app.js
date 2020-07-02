@@ -12,6 +12,15 @@ const fondo = document.querySelector('#fondo');
 
 })();
 
+(() => {
+    const color = localStorage.getItem('colorFondo');
+
+    if(color === null){
+        fondo.className = 'bg-dark';
+    }else{
+        fondo.className = color;
+    }
+})();
 function delegacion(e){
     e.preventDefault();
     
@@ -20,22 +29,27 @@ function delegacion(e){
     switch(colorBoton){
         case ('btn-primary'):
             fondo.className = 'bg-primary';
+            localStorage.setItem('colorFondo','bg-primary');
             break;
 
         case ('btn-secondary'):
             fondo.className = 'bg-secondary';
+            localStorage.setItem('colorFondo','bg-secondary');
             break;
         
         case ('btn-danger'):
             fondo.className = 'bg-danger';
+            localStorage.setItem('colorFondo','bg-danger');
             break;
 
         case ('btn-success'):
             fondo.className = 'bg-success';
+            localStorage.setItem('colorFondo','bg-success');
             break;
 
         case ('btn-warning'):
             fondo.className = 'bg-warning';
+            localStorage.setItem('colorFondo','bg-warning');
             break;
     }
 }
@@ -55,3 +69,10 @@ function agregarBotones(e){
     `
 
 }
+
+//Local Storage... Guarda cadenas de texto, clave => valor
+//SET => Guardando
+//GET => Obtener
+
+/* const nombre = 'Yoberson';
+localStorage.setItem('nombreUsuario', nombre); */
